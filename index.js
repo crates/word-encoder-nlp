@@ -9,7 +9,6 @@ const loadDictionary = (forceRead = false) => {
     try {
       dictionary = jsonfile.readFileSync(dictionaryFilePath);
     } catch (error) {
-      console.error(error);
       dictionary = {};
     }
   }
@@ -24,7 +23,6 @@ const writeFile = (encoding) => {
     jsonfile.writeFileSync(dictionaryFilePath, dictionary);
     loadDictionary(true);
   } catch (error) {
-    console.error(error);
   }
 };
 
@@ -40,7 +38,7 @@ exports.getSize = () => {
   return Object.keys(dictionary).length;
 };
 
-exports.encodeWord = (word = null) => {
+const encodeWord = (word = null) => {
   if (word) {
     const maxIndex = getMaxIndex();
     const nextIndex = (maxIndex + 1);
@@ -56,7 +54,7 @@ exports.encodeWord = (word = null) => {
 exports.encodeWords = (wordArray = []) => {
   if (wordArray.isArray()) {
     wordArray.forEach(word => {
-      this.encodeWord(word);
+      encodeWord(word);
     });
   }
 };
@@ -66,12 +64,12 @@ exports.getEncoding = (word) => {
   let encoding = dictionary[word];
 
   if (!encoding) {
-    encoding = this.encodeWord(word);
+    encoding = encodeWord(word);
   }
 
   return encoding;
 };
 
-exports.getEncoddings = () => {
+exports.getEncodings = () => {
   return loadDictionary();
 };
