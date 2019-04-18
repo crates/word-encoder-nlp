@@ -1,0 +1,19 @@
+{
+  "name": "word-encoder-nlp",
+  "version": "1.0.0",
+  "description": "Encodes every word into integer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tensorflow",
+    "encoder",
+    "word"
+  ],
+  "author": "tyukesz",
+  "license": "ISC",
+  "dependencies": {
+    "jsonfile": "^5.0.0"
+  }
+}
