@@ -1,10 +1,9 @@
 {
   "name": "word-encoder-nlp",
-  "version": "1.0.2",
-  "description": "Encodes every word into integer",
+  "version": "1.0.3",
+  "description": "Encodes every word into integer.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
