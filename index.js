@@ -51,12 +51,21 @@ const encodeWord = (word = null) => {
   return null;
 };
 
-exports.encodeWords = (wordArray = []) => {
-  if (wordArray.isArray()) {
+exports.encodeWords = (wordArray = [], returnWithWords = false) => {
+  const encodingList = [];
+  if (Array.isArray(wordArray)) {
     wordArray.forEach(word => {
-      encodeWord(word);
+      const encoding = this.getEncoding(word);
+
+      if (returnWithWords) {
+        encodingList.push({[word]: encoding});
+      } else {
+        encodingList.push(encoding);
+      }
     });
   }
+
+  return encodingList;
 };
 
 exports.getEncoding = (word) => {
