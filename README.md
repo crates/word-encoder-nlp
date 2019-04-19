@@ -1,7 +1,8 @@
 Node.js - Word Encoder NLP
 =========
 
-It's a basic word encoder. Useful when working on projects, which need encoded words dictionary for **N**atural **L**anguage **P**rocessing (**NLP**).  
+It's a basic word encoder.  
+Useful when working on projects, which need encoded words dictionary for **N**atural **L**anguage **P**rocessing (**NLP**).  
 Includes a **JSON** with preencoded words (source: https://storage.googleapis.com/tensorflow/tf-keras-datasets/imdb_word_index.json).  
 You can use it for your own [sentiment classification](https://github.com/tensorflow/tfjs-examples/tree/master/sentiment) or [text classification](https://www.tensorflow.org/alpha/tutorials/sequences/text_classification_rnn).
 ## Installation

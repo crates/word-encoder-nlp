@@ -7,9 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "NLP",
+    "AI",
     "tensorflow",
     "encoder",
-    "word"
+    "word",
+    "dictionary",
+    "word2int"
   ],
   "author": "tyukesz",
   "license": "MIT",
