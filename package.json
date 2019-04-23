@@ -1,13 +1,13 @@
 {
   "name": "word-encoder-nlp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Encodes every word into integer.",
   "main": "index.js",
   "scripts": {
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tyukesz/WordEncoderNLP.git"
+    "url": "git+https://github.com/tyukesz/word-encoder-nlp.git"
   },
   "keywords": [
     "NLP",
